@@ -5,7 +5,7 @@ import axios from "axios"
 export const StoreContext=createContext(null)
 const StoreContextProvider=(props)=>{
    const [cartItems,setCartItems]=useState({});
-   const url= import.meta.env.VITE_API_URL ||"http://localhost:4000"
+   const url= https://handmade-backend-0ppe.onrender.com/
 
    const [token,setToken]=useState("")
 
