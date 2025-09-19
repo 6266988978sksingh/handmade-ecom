@@ -14,4 +14,5 @@ export const assets ={
     parcel_icon
 }
 
-export const url =https://handmade-backend-0ppe.onrender.com/
+export const url = "https://handmade-backend-0ppe.onrender.com/";
+
