@@ -33,7 +33,7 @@ app.use("/api/cart", cartRouter);
 app.use("/api/order", orderRouter);
 
 // React frontend serve karna
-app.use(express.static(path.join(__dirname, '../client/build')));
+app.use(express.static(path.join(__dirname, '../frontend/build')));
 
 // Optional: API root test (catch-all se pehle)
 app.get("/api", (req, res) => {
@@ -42,7 +42,7 @@ app.get("/api", (req, res) => {
 
 // Catch-all for React Router (Stripe success redirect etc.)
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+    res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
 });
 
 // Server start
