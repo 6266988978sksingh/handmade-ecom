@@ -12,7 +12,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 const placeOrder = async (req,res )=>{
 
-    const frontend_url='https://handmade-frontend.onrender.com'
+    const frontend_url=processs.env.FRONTEND_URL||"http://localhost:5174";
 
     try {
         const newOrder = new orderModel({
